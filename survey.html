@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Survey</title>
+  <link rel='stylesheet' href="css/navbar.css">
+  <link rel='stylesheet' href="css/likertscale.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300&display=swap');
+  </style>
+</head>
+<body>
+
+  <div class="topnav">
+    <a href="home.html" id="pagename">Medfinder</a>
+    <input type="text" placeholder="Search...">
+    <a class="active" href="survey.html">Quick survey</a>
+    <a href="localstore.html">Local stores</a>
+    <a href="beforeyougo.html">Before you go</a>
+  </div>
+
+  <div style="text-align: center;">
+    <h1 style="color: blue;">Quick Diagnostic Survey</h1>
+    <p style="font-size: medium;">Disclaimer: Our diagnosis is only for minor and common ailments, and is 
+      only meant to be received as advice <br>
+      In order to most accurately diagnose your problems, we advise you to 
+      visit a medical doctor</p>
+  </div>
+
+  <div style="padding-left: 20px; padding-top: 20px">
+    <p>Complete our survey to find out what might be wrong, <br>
+      and what medicine you should take!</p>
+    <br>
+    <ul>
+      <li>Quick to complete</li>
+      <li>100% free</li>
+      <li>Verified by medical experts</li>
+    </ul>
+  </div>
+
+  <div class="wrap">
+    <h1 class="likert-header">Check boxes of your symptoms</h1>
+    <form action="">
+      <label class="statement">Sniffing</label>
+      <ul class='likert'>
+        <li>
+          <input type="radio" name="likert" value="strong_agree">
+          <label>None</label>
+        </li>
+        <li>
+          <input type="radio" name="likert" value="strong_agree">
+          <label>Slight</label>
+        </li>
+        <li>
+          <input type="radio" name="likert" value="strong_agree">
+          <label>Mild</label>
+        </li>
+        <li>
+          <input type="radio" name="likert" value="disagree">
+          <label>Somewhat</label>
+        </li>
+        <li>
+          <input type="radio" name="likert" value="strong_agree">
+          <label>Heavy</label>
+        </li>
+      </ul>
+      <label class="statement">Sneezing</label>
+      <ul class='likert'>
+        <li>
+          <input type="radio" name="likert1" value="strong_agree">
+          <label>None</label>
+        </li>
+        <li>
+          <input type="radio" name="likert1" value="strong_agree">
+          <label>Slight</label>
+        </li>
+        <li>
+          <input type="radio" name="likert1" value="strong_agree">
+          <label>Mild</label>
+        </li>
+        <li>
+          <input type="radio" name="likert1" value="disagree">
+          <label>Somewhat</label>
+        </li>
+        <li>
+          <input type="radio" name="likert1" value="strong_agree">
+          <label>Heavy</label>
+        </li>
+      </ul>
+      <label class="statement">Stuffy nose</label>
+      <ul class='likert'>
+        <li>
+          <input type="radio" name="likert2" value="strong_agree">
+          <label>None</label>
+        </li>
+        <li>
+          <input type="radio" name="likert2" value="strong_agree">
+          <label>Slight</label>
+        </li>
+        <li>
+          <input type="radio" name="likert2" value="strong_agree">
+          <label>Mild</label>
+        </li>
+        <li>
+          <input type="radio" name="likert2" value="disagree">
+          <label>Somewhat</label>
+        </li>
+        <li>
+          <input type="radio" name="likert2" value="strong_agree">
+          <label>Heavy</label>
+        </li>
+      </ul>
+      <div class="buttons">
+        <button class="clear">Clear</button>
+        <a class="lol" href="surveyresult.html" type="button">Submit</button>
+      </div>
+    </form>
+  </div>
+
+
+</body>
+</html>

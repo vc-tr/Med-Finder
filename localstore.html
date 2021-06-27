@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LocalStore</title>
+  <link rel='stylesheet' href="css/navbar.css">
+  <link rel='stylesheet' href="css/tablocalstore.css">
+  <link rel='stylesheet' href="css/cardsurvey.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300&display=swap');
+  </style>
+</head>
+<body>
+
+  <div class="topnav">
+    <a href="home.html" id="pagename">Medfinder</a>
+    <input type="text" placeholder="Search...">
+    <a href="survey.html">Quick survey</a>
+    <a class="active" href="localstore.html">Local stores</a>
+    <a href="beforeyougo.html">Before you go</a>
+  </div>
+  <h1> Find your local store </h1>
+<div class="container">
+  <div class="container-1">
+    <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'London')">In proximity</button>
+      <button class="tablinks" onclick="openCity(event, 'Paris')">In city</button>
+    </div>
+    <div id="London" class="tabcontent">
+      <div>
+        <form>
+          <label class="radio-inline">
+            <input type="radio" name="optradio" checked>under 1km
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="optradio">under 5km
+          </label>
+        </form>
+      </div>
+    </div>
+    <div id="Paris" class="tabcontent">
+      <input type="text" placeholder="Search for city">
+    </div>
+    <div>
+      Enter here medicine <br> you are looking for <br> <br> 
+      <input type="text" placeholder="search for store with medicine you type in">
+    </div>
+   </div>
+
+   <div class="container-2">
+    <img src="image/map.png" style="width:600px">
+  <div>
+    <div class="card">
+      <h3>Store ABC</h3>
+      <img src="image/home1.png" style="width:100px;float:right">
+      <p>Address: asdjasfohas0ifh</p>
+    </div>
+    <div class="card">
+      <h3>Store XYZ</h3>
+      <img src="image/home1.png" style="width:100px;float:right">
+      <p>Address: asdjasfohas0ifh</p>
+  </div>
+  </div>
+</div>
+
+ 
+  
+  <script>
+  function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+  </script>
+
+  
+  
+  
+
+</body>
+</html>
